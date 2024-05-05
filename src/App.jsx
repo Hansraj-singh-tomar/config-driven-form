@@ -10,10 +10,10 @@ function App() {
 
   function handleSubmit(e) {
     e.preventDefault();
-     const form = document.getElementById('myForm');
-     const formdata = new FormData(form);
+    const form = document.getElementById('myForm');
+    const formdata = new FormData(form);
 
-     console.log([...formdata.entries()]);
+    console.log([...formdata.entries()]);
   }
 
   function handleChange({ value, name, index }) {
@@ -31,7 +31,7 @@ function App() {
   return (
     <div>
       <br />
-     
+
 
       <FormWrapper
         inputs={userData}
